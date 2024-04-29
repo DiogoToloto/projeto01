@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar {
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #c6c6c6;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #fff;
+}
+
+header #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+header #navbar .nav-brand {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+header #navbar #nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+header #navbar #nav-list .nav-item a {
+    text-decoration: none;
+    color: #3f3f3f;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.5s;
+}
+
+header #navbar #nav-list .nav-item a:hover {
+    color: #9c9c9c;
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 6rem;
+}
+
+main #banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+main #banner .banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 500px;
+}
+
+main #banner .banner-content .banner-content-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+main #banner .banner-content .banner-content-subtitle {
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 24px;
+}
+
+main #banner .banner-content .banner-content-btn {
+    background-color: rgb(114, 114, 114);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 2px;
+    padding: 8px 24px;
+    transition: 0.5s;
+}
+
+main #banner .banner-content .banner-content-btn:hover {
+    background-color: #c6c6c6;
+    color: #000;
+}
+
+main #banner .banner-image {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+}
+
+main #posts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    background-color: #c6c6c6;
+    
+}
+
+main #posts #posts-content {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+main #posts #posts-content #posts-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+main #posts #posts-content #posts-content-header .section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main #posts #posts-content #posts-content-header .view-all-link {
+    text-decoration: none;
+    color: #000;
+}
+
+main #posts #posts-content #posts-content-header .view-all-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+main #posts #posts-content .posts-cards {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 3rem;
+}
+
+main #posts #posts-content .posts-cards .post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+main #posts #posts-content .posts-cards .post-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+main #posts #posts-content .posts-cards .post-card span {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Media Queries*/
+
+@media (max-width: 920px) {
+    main #banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main #banner .banner-content {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 720px) {
+    main #posts #posts-content .posts-cards {
+        flex-direction: column;
+    }
+}
