@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <header>
@@ -15,6 +16,16 @@
             <li class="nav-item"><a href="#">Blog</a></li>
             <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
+        <div class="hamburguer-menu">
+            <span id="icon" class="material-symbols-outlined" onclick="abirMenu()">
+                menu
+                </span>
+                <ul id="nav-list-menu">
+                    <li class="nav-item-menu"><a href="#">Works</a></li>
+                    <li class="nav-item-menu"><a href="#">Blog</a></li>
+                    <li class="nav-item-menu"><a href="#">Contact</a></li>
+                </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -48,5 +59,17 @@
         </section>
     </main>
     <footer></footer>
+    <script>
+        function abirMenu() {
+            let listaMenu = document.querySelector('#nav-list-menu')
+
+            if (listaMenu.style.display == 'block') {
+                listaMenu.style.display = 'none'
+            }else {
+                listaMenu.style.display = 'block'
+            }
+        }
+
+    </script>
   </body>
 </html>
