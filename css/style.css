@@ -42,6 +42,25 @@ header #navbar {
     height: 80px;
 }
 
+header #navbar .hamburguer-menu {
+    display: none;
+}
+
+header #navbar .hamburguer-menu #icon {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+header #navbar .hamburguer-menu #nav-list-menu {
+    position: absolute;
+    list-style: none;
+}
+
+header #navbar .hamburguer-menu #nav-list-menu .nav-item-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
 header #navbar .nav-brand {
     text-decoration: none;
     font-size: 1.5rem;
@@ -200,5 +219,13 @@ main #posts #posts-content .posts-cards .post-card span {
 @media (max-width: 720px) {
     main #posts #posts-content .posts-cards {
         flex-direction: column;
+    }
+
+    header #navbar .hamburguer-menu {
+        display: block;
+    }
+
+    header #navbar #nav-list, #nav-list-menu {
+        display: none;
     }
 }
