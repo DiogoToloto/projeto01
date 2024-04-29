@@ -26,7 +26,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: #fff;
+    top: 0;
 }
 
 header #navbar {
@@ -67,7 +70,7 @@ header #navbar #nav-list .nav-item a:hover {
 }
 
 main {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 main #banner {
